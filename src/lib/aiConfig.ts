@@ -127,8 +127,7 @@ export const getSystemContext = () => {
 - Tagline: ${aiConfig.companyDescription}
 - Operations: ${aiConfig.location}
 - Direct Lines: ${aiConfig.email} | ${aiConfig.phone}
-- Founder: ${aiConfig.team[0].name} (${aiConfig.team[0].role})
-- Co-Founders: ${aiConfig.team[1].name}, ${aiConfig.team[2].name}
+- Team: ${aiConfig.team.map(t => `${t.name} (${t.role})`).join(', ')}
 
 **Detailed Services List:**
 ${aiConfig.services.map(s => `- ${s.name}: ${s.description}`).join('\n')}

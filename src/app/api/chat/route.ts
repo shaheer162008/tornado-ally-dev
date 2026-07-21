@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getSystemContext } from '@/lib/aiConfig';
 
 const MAX_MESSAGE_LENGTH = 2000;
-const MODEL_NAME = 'gemini-flash-latest';
+const MODEL_NAME = 'gemini-2.5-flash';
 
 export async function POST(request: NextRequest) {
   try {
@@ -71,8 +71,11 @@ export async function POST(request: NextRequest) {
           },
         ],
         generationConfig: {
-          maxOutputTokens: 1024,
+          maxOutputTokens: 2048,
           temperature: 0.7,
+          // Thinking tokens count against maxOutputTokens; leaving it on
+          // truncates the reply before any text is produced.
+          thinkingConfig: { thinkingBudget: 0 },
         },
         safetySettings: [
           { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_MEDIUM_AND_ABOVE' },
