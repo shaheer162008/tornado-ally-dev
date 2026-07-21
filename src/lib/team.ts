@@ -8,14 +8,14 @@ export interface TeamMember {
 }
 
 export const teamMembers: TeamMember[] = [
-  // {
-  //   id: 'muhammad-shaheer',
-  //   name: 'Muhammad Shaheer',
-  //   role: 'Founder & CEO',
-  //   description: 'Founder of Nexiler with a vision to build a team of partners, not just employees. Leading the mission to deliver intelligent automation and premium web solutions globally.',
-  //   image: '/team/muhammad-shaheer.jpg',
-  //   linkedin: 'https://www.linkedin.com/in/muhammad-shaheer-yousuf/',
-  // },
+  {
+    id: 'muhammad-shaheer',
+    name: 'Muhammad Shaheer',
+    role: 'Founder & CEO',
+    description: 'Founder of Nexiler with a vision to build a team of partners, not just employees. Leading the mission to deliver intelligent automation and premium web solutions globally.',
+    image: '/team/syed-muhammad-taha.png',
+    linkedin: 'https://www.linkedin.com/in/muhammad-shaheer-yousuf/',
+  },
   {
     id: 'muhammad-saim',
     name: 'Muhammad Saim',
