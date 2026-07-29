@@ -60,7 +60,7 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: #1B1B1B;
     --popover-foreground: oklch(0.985 0 0);
-    --primary: #a855f7;
+    --primary: #0c86ba;
     --primary-foreground: #ffffff;
     --secondary: #1B1B1B;
     --secondary-foreground: oklch(0.985 0 0);
@@ -109,11 +109,11 @@
   background: #1B1B1B;
 }
 ::-webkit-scrollbar-thumb {
-  background: #6b169f;
+  background: #0c86ba;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #a855f7;
+  background: #0c86ba;
 }
 
 html, body {

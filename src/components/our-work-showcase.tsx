@@ -85,7 +85,7 @@ export default function OurWorkShowcase() {
                       <FiStar size={12} className="text-primary" /> Featured
                     </span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-foreground mb-4 group-hover:text-purple-400 transition-colors duration-300 tracking-tight">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-foreground mb-4 group-hover:text-[#0c86ba] transition-colors duration-300 tracking-tight">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground font-mono leading-relaxed mb-8 text-base sm:text-lg">
@@ -174,7 +174,7 @@ export default function OurWorkShowcase() {
 
                 {/* Content */}
                 <div className="p-6 sm:p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-3 tracking-tight group-hover:text-purple-400 transition-colors">
+                  <h3 className="text-xl font-bold text-foreground mb-3 tracking-tight group-hover:text-[#0c86ba] transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground font-mono text-sm leading-relaxed mb-6 line-clamp-3">

@@ -10,29 +10,29 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "info@tornadoally.dev", // Your Gmail address
+        user: process.env.GMAIL_USER_EMAIL || process.env.CONTACT_EMAIL || "info@tornadoally.dev", // Your Gmail address
         pass: process.env.GMAIL_APP_PASSWORD, // Gmail App Password (not regular password)
       },
     });
 
-    // Email to company (hello@tornadoallydev.com)
+    // Email to company
     const companyMailOptions = {
-      from: "no-reply@tornadoally.dev",
-      to: "info@tornadoally.dev",
+      from: process.env.FROM_EMAIL || "no-reply@tornadoally.dev",
+      to: process.env.CONTACT_EMAIL || "info@tornadoally.dev",
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <div style="max-width: 600px; margin: 0 auto; background-color: #1B1B1B; color: #ffffff; padding: 40px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <img src="https://www.tornadoallydev.com/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 200px; height: auto; margin: 0 auto; border-radius: 50%;" />
+            <img src="${process.env.WEBSITE_URL || 'https://www.tornadoallydev.com'}/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 200px; height: auto; margin: 0 auto; border-radius: 50%;" />
             <p style="color: #999999; font-size: 14px; margin-top: 10px;">New Contact Form Submission</p>
           </div>
           
-          <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2); margin: 20px 0;">
-            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #a855f7;">Name:</strong> ${firstName} ${lastName}</p>
-            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #a855f7;">Email:</strong> ${email}</p>
-            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #a855f7;">Phone:</strong> ${phone || "Not provided"}</p>
+          <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(12,134,186,0.2); margin: 20px 0;">
+            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #0c86ba;">Name:</strong> ${firstName} ${lastName}</p>
+            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #0c86ba;">Email:</strong> ${email}</p>
+            <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #0c86ba;">Phone:</strong> ${phone || "Not provided"}</p>
             <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
-              <p style="color: #999999; margin-bottom: 10px;"><strong style="color: #a855f7;">Message:</strong></p>
+              <p style="color: #999999; margin-bottom: 10px;"><strong style="color: #0c86ba;">Message:</strong></p>
               <p style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; color: #cccccc; line-height: 1.6;">${message}</p>
             </div>
           </div>
@@ -46,30 +46,30 @@ export async function POST(request: NextRequest) {
 
     // Confirmation email to client
     const clientMailOptions = {
-      from: "no-reply@tornadoally.dev",
+      from: process.env.FROM_EMAIL || "no-reply@tornadoally.dev",
       to: email,
       subject: "Thank you for contacting TornadoallyDev!",
       html: `
         <div style="max-width: 600px; margin: 0 auto; background-color: #1B1B1B; color: #ffffff; padding: 40px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <img src="https://www.tornadoallydev.com/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 220px; height: auto; margin: 0 auto; border-radius: 50%;" />
+            <img src="${process.env.WEBSITE_URL || 'https://www.tornadoallydev.com'}/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 220px; height: auto; margin: 0 auto; border-radius: 50%;" />
             <p style="color: #999999; font-size: 16px; margin-top: 10px;">Unity Development & Blender Art</p>
           </div>
           
-          <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2); margin: 20px 0;">
+          <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(12,134,186,0.2); margin: 20px 0;">
             <h2 style="color: #ffffff; margin-top: 0; font-size: 22px;">Thank You for Reaching Out!</h2>
             <p style="color: #cccccc; font-size: 15px; line-height: 1.6;">We have received your message and our team of experts is currently reviewing your requirements. We will respond within 24 hours.</p>
             
             <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-              <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #a855f7;">Your Submission:</strong></p>
+              <p style="color: #999999; margin-bottom: 5px;"><strong style="color: #0c86ba;">Your Submission:</strong></p>
               <p style="color: #ffffff; margin: 5px 0;">Name: ${firstName} ${lastName}</p>
               <p style="color: #ffffff; margin: 5px 0;">Email: ${email}</p>
               <p style="color: #ffffff; margin: 5px 0;">Phone: ${phone || "Not provided"}</p>
             </div>
           </div>
 
-          <div style="background: linear-gradient(135deg, rgba(168,85,247,0.1) 0%, rgba(168,85,247,0) 100%); padding: 30px; border-radius: 12px; border-left: 4px solid #a855f7; margin: 20px 0;">
-            <h3 style="margin-top: 0; color: #a855f7; font-size: 18px;">What happens next?</h3>
+          <div style="background: linear-gradient(135deg, rgba(12,134,186,0.1) 0%, rgba(12,134,186,0) 100%); padding: 30px; border-radius: 12px; border-left: 4px solid #0c86ba; margin: 20px 0;">
+            <h3 style="margin-top: 0; color: #0c86ba; font-size: 18px;">What happens next?</h3>
             <ul style="padding-left: 20px; color: #cccccc; line-height: 1.8; margin: 10px 0;">
               <li style="margin: 8px 0;">Detailed review of your business needs</li>
               <li style="margin: 8px 0;">A direct response from our project managers</li>
@@ -80,8 +80,8 @@ export async function POST(request: NextRequest) {
 
           <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
             <p style="color: #ffffff; font-size: 16px; margin-bottom: 5px;">Best regards,</p>
-            <p style="color: #a855f7; font-weight: bold; font-size: 18px; margin-top: 0;">TornadoallyDev</p>
-            <p style="color: #999999; font-size: 12px; margin-top: 15px;">info@tornadoally.dev | +1 (123) 456-7890</p>
+            <p style="color: #0c86ba; font-weight: bold; font-size: 18px; margin-top: 0;">TornadoallyDev</p>
+            <p style="color: #999999; font-size: 12px; margin-top: 15px;">${process.env.CONTACT_EMAIL || "info@tornadoally.dev"} | +1 (123) 456-7890</p>
             <p style="color: #666666; font-size: 11px;">&copy; 2026 TornadoallyDev. All rights reserved.</p>
           </div>
         </div>

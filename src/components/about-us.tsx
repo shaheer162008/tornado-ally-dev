@@ -17,22 +17,32 @@ export default function AboutUs() {
         <div 
           className="relative mx-auto flex h-[30rem] sm:h-[40rem] w-full max-w-[60rem] items-center justify-center overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border border-white/10 isolate bg-card/80 backdrop-blur-md shadow-[0_18px_70px_rgba(0,0,0,0.2)]"
         >
-          <BackgroundGradientAnimation>
+          <BackgroundGradientAnimation
+            gradientBackgroundStart="rgb(0, 0, 0)"
+            gradientBackgroundEnd="rgb(12, 134, 186)"
+            firstColor="12, 134, 186"
+            secondColor="12, 134, 186"
+            thirdColor="255, 255, 255"
+            fourthColor="12, 134, 186"
+            fifthColor="12, 134, 186"
+            pointerColor="255, 255, 255"
+            size="80%"
+          >
             <div className="absolute z-50 inset-0 flex items-center justify-center pointer-events-none">
               {/* Inner card hovering above the gradient */}
-              <Card className="w-[90%] sm:w-85 z-10 rounded-[2rem] border border-primary/20 bg-[#0a0512]/90 shadow-[0_0_30px_-5px_rgba(168,85,247,0.2)] bg-gradient-to-b from-primary/5 to-transparent shadow-2xl backdrop-blur-xl pointer-events-auto">
+              <Card className="w-[90%] sm:w-85 z-10 rounded-[2rem] border border-primary/20 bg-[#0a0512]/90 shadow-[0_0_30px_-5px_rgba(12,134,186,0.2)] bg-gradient-to-b from-primary/5 to-transparent shadow-2xl backdrop-blur-xl pointer-events-auto">
             <CardContent className="p-6 font-sans">
               <div className="mb-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-purple-400 animate-pulse shadow-[0_0_8px_rgba(168,85,247,0.8)]" />
+                  <div className="h-2 w-2 rounded-full bg-[#0c86ba] animate-pulse shadow-[0_0_8px_rgba(12,134,186,0.8)]" />
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">Engine Boot</span>
                 </div>
-                <span className="text-xs font-extrabold text-purple-400">92%</span>        
+                <span className="text-xs font-extrabold text-[#0c86ba]">92%</span>        
               </div>
 
               {/* Progress bar */}
               <div className="mb-5 h-1.5 w-full overflow-hidden rounded-full bg-white/10 relative">
-                <div className="h-full w-[92%] rounded-full bg-linear-to-r from-purple-400 via-indigo-500 to-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.6)] animate-[pulse_2s_ease-in-out_infinite]" />
+                <div className="h-full w-[92%] rounded-full bg-linear-to-r from-[#0c86ba] via-[#0c86ba] to-[#0c86ba] shadow-[0_0_15px_rgba(12,134,186,0.6)] animate-[pulse_2s_ease-in-out_infinite]" />
               </div>
 
               <p className="text-xs text-muted-foreground font-medium leading-relaxed">
@@ -62,7 +72,7 @@ export default function AboutUs() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1B1B1B] border border-white/10 backdrop-blur-md mb-2"
           >
-            <span className="w-2 h-2 rounded-full bg-purple-400 animate-[pulse_2s_ease-in-out_infinite]" />
+            <span className="w-2 h-2 rounded-full bg-[#0c86ba] animate-[pulse_2s_ease-in-out_infinite]" />
             <span className="text-xs font-semibold uppercase tracking-wider text-primary font-sans">
               Who We Are
             </span>

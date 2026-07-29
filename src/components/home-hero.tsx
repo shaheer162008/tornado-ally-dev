@@ -150,8 +150,8 @@ export default function HomeHero(props: any) {
           {/* Announcement Banner */}
           {announcementBanner && (
             <div className="mb-8 flex justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
-              <div className="relative flex items-center gap-x-2 rounded-full border border-[#a855f7] bg-transparent px-4 py-1.5 text-sm leading-6 shadow-sm hover:bg-[#a855f7]/10 transition-all cursor-pointer backdrop-blur-md">
-                <Sparkles className="h-4 w-4 text-[#a855f7]" />
+              <div className="relative flex items-center gap-x-2 rounded-full border border-[#0c86ba] bg-transparent px-4 py-1.5 text-sm leading-6 shadow-sm hover:bg-[#0c86ba]/10 transition-all cursor-pointer backdrop-blur-md">
+                <Sparkles className="h-4 w-4 text-[#0c86ba]" />
                 <span className="font-semibold text-foreground tracking-wide">{announcementBanner.text}</span>
               </div>
             </div>
@@ -197,14 +197,14 @@ export default function HomeHero(props: any) {
           
           {/* Vertical Position on Right Wall with Upright Letters - Visible on all screens */}
           <div className="absolute right-0 lg:right-2 top-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-4 z-50">
-            <div className="h-12 sm:h-16 w-[2px] bg-[#a855f7]"></div>
+            <div className="h-12 sm:h-16 w-[2px] bg-[#0c86ba]"></div>
             <span 
-              className="text-xs sm:text-sm font-bold uppercase text-[#a855f7] tracking-[0.2em] sm:tracking-[0.3em] flex flex-col items-center text-center"
+              className="text-xs sm:text-sm font-bold uppercase text-[#0c86ba] tracking-[0.2em] sm:tracking-[0.3em] flex flex-col items-center text-center"
               style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}
             >
               Serving Globally
             </span>
-            <div className="h-12 sm:h-16 w-[2px] bg-[#a855f7]"></div>
+            <div className="h-12 sm:h-16 w-[2px] bg-[#0c86ba]"></div>
           </div>
         </div>
       </div>
