@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { FiExternalLink, FiArrowRight } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 import { featuredProjects } from '@/lib/projects';
 import { motion } from 'framer-motion';
 
@@ -22,9 +21,9 @@ export default function OurWork({ hideViewMore }: { hideViewMore?: boolean }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full font-bold tracking-widest text-[11px] mb-6 bg-[#1B1B1B] border border-transparent text-white uppercase shadow-sm"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full font-bold tracking-widest text-[11px] mb-6 bg-black border border-transparent text-white uppercase shadow-sm"
           >
-            PORTFOLIO
+            [WILL BE FILLED BY YOU]
           </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -33,8 +32,7 @@ export default function OurWork({ hideViewMore }: { hideViewMore?: boolean }) {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight tracking-tighter"
           >
-            Projects We&apos;ve{' '}
-            <span className="text-primary">Delivered</span>
+            [WILL BE FILLED BY YOU]
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -43,7 +41,7 @@ export default function OurWork({ hideViewMore }: { hideViewMore?: boolean }) {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-muted-foreground font-medium max-w-2xl mx-auto font-mono"
           >
-            Real projects, real results. Here&apos;s a glimpse of the websites, apps, and AI solutions we&apos;ve built for businesses around the world.
+            [WILL BE FILLED BY YOU]
           </motion.p>
         </div>
 
@@ -61,7 +59,7 @@ export default function OurWork({ hideViewMore }: { hideViewMore?: boolean }) {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Image container */}
-              <div className="relative w-full aspect-[16/10] overflow-hidden">
+              <div className="relative w-full aspect-16/10 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -123,16 +121,7 @@ export default function OurWork({ hideViewMore }: { hideViewMore?: boolean }) {
             viewport={{ once: true }}
             className="text-center mt-8"
           >
-            <Link
-              href="/our-work"
-              className="inline-flex items-center gap-2.5 px-10 py-4 rounded-full bg-[#1B1B1B] border border-white/10 text-white font-semibold transition-all duration-300 hover:scale-105 group font-sans shadow-xl shadow-black/20"
-            >
-              See All Our Work
-              <FiArrowRight
-                className="group-hover:translate-x-1 transition-transform"
-                size={18}
-              />
-            </Link>
+            [WILL BE FILLED BY YOU]
           </motion.div>
         )}
       </div>

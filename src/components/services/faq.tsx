@@ -16,31 +16,31 @@ export interface ServicesFaqProps {
 
 const defaultFaqs: FaqItem[] = [
   {
-    question: "What kind of digital services do you provide?",
+    question: "What kind of work do you provide?",
     answer:
-      "We provide a comprehensive suite of digital services spanning custom Website Development, AI Automation Setups, intelligent Chatbots, Full Brand Creation, SEO Optimization, and Mobile App Development.",
+      "We focus on Unity development, Blender art, C# programming, shader development, hard-surface modeling, and texturing.",
   },
   {
-    question: "How can AI Automation help my business?",
+    question: "What are your core skills?",
     answer:
-      "AI Automation streamlines repetitive tasks, manages customer queries 24/7, and organizes your workflows, reducing overhead costs and freeing up your team to focus on high-value growth activities.",
+      "C# programming, shader development, hard-surface modeling, and texturing in any style.",
   },
   {
-    question: "Do you build custom websites or use templates?",
+    question: "Are you available full time?",
     answer:
-      "We specialize in high-performance, fully custom website development crafted specifically for your brand and business goals, ensuring a unique and scalable digital presence.",
+      "Yes. TornadoallyDev is open for work and available full time.",
   },
   {
-    question: "What is your typical project timeline?",
+    question: "How do you prefer to work?",
     answer:
-      "Project timelines vary based on scope and complexity. Small to medium-sized websites or basic automations might take 2-4 weeks, while complex platforms or full brand rollouts can take a few months. We establish clear milestones from day one.",
+      "Open to collaboration or working independently, depending on the project.",
   },
 ];
 
 export const ServicesFaq = ({
   badge = "FAQ",
   heading = "Common Questions & Answers",
-  description = "Find out all the essential details about our digital solutions and how we can scale your business.",
+  description = "Find the essential details about TornadoallyDev's availability, skills, and workflow.",
   faqs = defaultFaqs,
 }: ServicesFaqProps) => {
   return (

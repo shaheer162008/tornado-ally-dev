@@ -23,10 +23,10 @@ export function AboutTeam() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tighter text-balance">
-            Meet the Minds Behind <span className="text-primary">Nexiler</span>
+            Meet the Maker Behind <span className="text-primary">TornadoallyDev</span>
           </h2>
           <p className="max-w-2xl text-muted-foreground font-mono text-base">
-            Nexiler was founded by three passionate leaders who came together with a shared vision. Meet our founders who are committed to delivering intelligent automation and premium web solutions globally.
+            TornadoallyDev is a solo creative studio focused on Unity work, Blender art, and practical production support.
           </p>
         </motion.div>
 

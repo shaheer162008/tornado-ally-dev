@@ -13,7 +13,7 @@ export default function TermsOfService() {
     <main className="flex flex-col bg-background relative w-full overflow-x-hidden">
       <Hero
         title={<>Terms <span className="text-primary">of Service</span></>}
-        description="Legal agreement and terms of service for Nexiler. We build honest partnerships that drive real results for your business."
+        description="Legal agreement and terms of service for TornadoallyDev."
         announcementBanner={{ text: "Legal", linkText: "", linkHref: "#" }}
       />
       <GridBackground>
@@ -25,7 +25,7 @@ export default function TermsOfService() {
             </p>
 
             <p className="text-foreground leading-relaxed mb-12 font-mono">
-              Welcome to Nexiler. We're all about building honest partnerships that drive real results for your business. Whether you need a powerful web application, smart AI automation, or a strategy to scale your brand online, these terms make sure we're on the same page from day one. We've kept this simple and clear because we believe great work starts with trust.
+              Welcome to TornadoallyDev. These terms keep expectations clear for Unity and Blender work, whether the project is hourly, per-task, or ongoing.
             </p>
 
             <div className="bg-[#1B1B1B]/60 border border-white/10 rounded-[2rem] p-6 mb-12 backdrop-blur-md">
@@ -38,7 +38,7 @@ export default function TermsOfService() {
             <section className="mb-12">
               <h2 className="text-2xl font-extrabold tracking-tighter text-white mb-4">1. Acceptance and Agreement</h2>
               <p className="text-foreground leading-relaxed font-mono">
-                By accessing our website, engaging in consultations, or signing a proposal/Statement of Work (SOW) with Nexiler (the "Agency"), you ("Client") agree to be bound by these Terms of Service. These terms apply to all digital services, including Web & Mobile App Development, AI Automation, Social Media Management, Content Creation, SEO, and Custom Solutions.
+                By accessing our website, engaging in consultations, or signing a proposal/Statement of Work (SOW) with TornadoallyDev (the "Studio"), you ("Client") agree to be bound by these Terms of Service. These terms apply to all creative and technical services, including Unity development, Blender art, C# programming, shader development, hard-surface modeling, and texturing.
               </p>
             </section>
 
@@ -54,7 +54,7 @@ export default function TermsOfService() {
               <ul className="list-disc list-inside text-foreground space-y-2 mb-6 font-mono">
                 <li>Custom Web Application Development (Next.js, React, Full-Stack)</li>
                 <li>Mobile Application Development (iOS, Android, Cross-Platform)</li>
-                <li>AI/ML Automation, Chatbot Integration, and Intelligent Workflows</li>
+                <li>Unity systems, Blender assets, shaders, and related technical art</li>
                 <li>Social Media Management and Growth Strategy</li>
                 <li>Content Creation (Video, Graphics, Copywriting)</li>
                 <li>Advanced SEO, Performance Marketing, and Digital Strategy</li>
@@ -278,8 +278,8 @@ export default function TermsOfService() {
                 Questions about any of this? Just email us.
               </p>
               <p className="text-foreground font-mono">
-                <a href="mailto:info@nexiler.tech" className="text-primary hover:text-primary/80 transition-colors font-bold">
-                  info@nexiler.tech
+                <a href="mailto:hello@tornadoallydev.com" className="text-primary hover:text-primary/80 transition-colors font-bold">
+                  hello@tornadoallydev.com
                 </a>
               </p>
             </section>
@@ -289,7 +289,7 @@ export default function TermsOfService() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
               <h2 className="text-3xl font-extrabold tracking-tighter text-white mb-6">Global Services - Worldwide Reach</h2>
               <p className="text-foreground leading-relaxed mb-8 font-mono">
-                Nexiler operates as a global software development and digital services company. We serve clients from UAE, United States, United Kingdom, Canada, Australia, and beyond. These Terms of Service apply to all clients regardless of location.
+                TornadoallyDev operates as a solo studio focused on Unity and Blender production. These Terms of Service apply to all clients regardless of location.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 font-mono">
@@ -349,7 +349,7 @@ export default function TermsOfService() {
             {/* Footer CTA */}
             <div className="text-center pt-16 border-t border-white/10">
               <p className="text-foreground text-xl font-medium mb-8">
-                Thanks for choosing Nexiler. Let's build something great together.
+                Thanks for choosing TornadoallyDev. Let's build something great together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

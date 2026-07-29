@@ -1,23 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Building2, UserCircle, Rocket } from "lucide-react";
+import { CheckCircle2, Boxes, UserCircle, Gamepad2 } from "lucide-react";
 
 const audiences = [
   {
-    icon: <Rocket className="h-6 w-6 text-primary" />,
-    title: "Ambitious Startups",
-    description: "Launch with a powerful, scalable foundation. We build MVPs, automate early workflows, and create brand identities that attract investors and early adopters instantly."
+    icon: <Gamepad2 className="h-6 w-6 text-primary" />,
+    title: "Game Developers",
+    description: "Build reliable Unity systems, gameplay tools, and production-ready assets for prototypes or shipped titles."
   },
   {
-    icon: <Building2 className="h-6 w-6 text-primary" />,
-    title: "Established Businesses",
-    description: "Stop losing time to manual tasks. We integrate AI chatbots and advanced automation to cut operational costs, while refreshing your digital presence to dominate competitors."
+    icon: <Boxes className="h-6 w-6 text-primary" />,
+    title: "Small Studios",
+    description: "Get flexible support for Blender modeling, texturing, and shader work without needing a full in-house 3D team."
   },
   {
     icon: <UserCircle className="h-6 w-6 text-primary" />,
-    title: "Creators & Individuals",
-    description: "Turn your personal brand into a scalable business. From high-converting portfolio websites to automated lead generation, we give you the tools to monetize your audience."
+    title: "Solo Creators",
+    description: "Work directly with one person who can handle collaboration or independent execution depending on your process."
   }
 ];
 
@@ -26,11 +26,11 @@ export function ServicesImportance() {
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-12 relative z-20 font-sans border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-6">
-            Who Needs Our <span className="text-primary">Services?</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-6">
+            Who This <span className="text-primary">Helps</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground/90 font-medium leading-relaxed font-mono">
-            Whether you are a solo visionary or an enterprise operating at scale, staying competitive requires modern technology. Our solutions are designed to eliminate friction and accelerate your growth.
+            If you need Unity development, Blender art, shader work, or detailed asset production, this studio is set up to support that work directly.
           </p>
         </div>
 
@@ -61,11 +61,11 @@ export function ServicesImportance() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-foreground/80">
                   <CheckCircle2 className="h-4 w-4 text-primary" />
-                  AI powered efficiency
+                  Practical production support
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-foreground/80">
                   <CheckCircle2 className="h-4 w-4 text-primary" />
-                  Scalable performance
+                  Game-ready output
                 </li>
               </ul>
             </motion.div>

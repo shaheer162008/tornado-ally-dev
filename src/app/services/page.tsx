@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { servicesMetadata } from "@/metadata";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
-import Features from "@/components/features";
 import { ServicesImportance } from "@/components/services/importance";
 import Footer from "@/components/footer";
 import { GridBackground } from "@/components/ui/grid-background";
@@ -14,13 +13,12 @@ export default function ServicesPage() {
   return (
     <main className="flex flex-col bg-background relative w-full overflow-x-hidden border-white/5">
       <Hero 
-        title={<>Smart Services That Move Your <span className="text-primary">Business Forward.</span></>} 
-        description="Web design, workflow automation, organic growth, and AI systems built around your goals, not generic templates."
-        announcementBanner={{ text: "Fuel Your Growth", linkText: "", linkHref: "#" }}
+        title={<>Blender Services Built for <span className="text-primary">Game Work.</span></>} 
+        description="Unity development, Blender art, C# programming, shader development, hard-surface modeling, and texturing support in one focused studio page."
+        announcementBanner={{ text: "Services", linkText: "", linkHref: "#" }}
       />
       <GridBackground className="border-t border-white/5">
         <Services hideViewAll={true} />
-        <Features />
         <ServicesImportance />
         <ServicesFaq />
       </GridBackground>

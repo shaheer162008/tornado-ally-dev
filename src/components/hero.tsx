@@ -29,15 +29,15 @@ export default function Hero(props: any) {
     ],
     loginText: "Sign In",
     loginHref: "/login",
-    title: props.title || <>Make Your Business Work <span className="text-primary">Smarter</span> with <span className="text-primary">{companyConfig.name}</span></>,
-    description: props.description || "We build websites, automate workflows, and help brands grow organically through AI driven systems designed for real results.",
+    title: props.title || <>Unity Developer + <span className="text-primary">Blender Artist</span> with <span className="text-primary">5 years</span> of experience</>,
+    description: props.description || "Open for full-time work, collaboration, or independent production on Unity, Blender, C#, shaders, hard-surface modeling, and texturing.",
     announcementBanner: props.announcementBanner || {
-      text: "Trusted by 50+ clients",
+      text: "Open for work",
       linkText: "",
-      linkHref: "/features/ai-assistant"
+      linkHref: "#"
     },
     callToActions: props.callToActions || [
-      { text: "Get Free Consultation", href: "/contact", variant: "primary" as const },
+      { text: "Get a Free Consultation", href: "/contact", variant: "primary" as const },
       { text: "View Our Work", href: "/our-work", variant: "secondary" as const }
     ],
     gradientColors: {
@@ -96,12 +96,11 @@ export default function Hero(props: any) {
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
               <Image 
-                src="/nexiler-nav.png" 
-                alt="Nexiler Logo" 
-                width={160} 
+                src="/tornado-ally-dev.png" 
+                alt="TornadoallyDev Logo" 
+                width={40} 
                 height={40} 
-                className="object-contain transition-transform duration-300 hover:scale-[1.1]" 
-                style={{ width: 'auto', height: '40px' }}
+                className="object-contain transition-transform duration-300 hover:scale-[1.1] rounded-full" 
               />
             </a>
           </div>
@@ -126,7 +125,7 @@ export default function Hero(props: any) {
           )}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
             <a href="/contact" className="rounded-full bg-primary px-7 py-3 text-lg font-medium text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors">
-              Get Started
+              Get a Free Consultation
             </a>
           </div>
         </nav>
@@ -139,12 +138,11 @@ export default function Hero(props: any) {
               <div className="flex items-center justify-between">
                 <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">     
                   <Image 
-                    src="/nexiler-nav.png" 
-                    alt="Nexiler Logo" 
-                    width={160} 
+                    src="/tornado-ally-dev.png" 
+                    alt="TornadoallyDev Logo" 
+                    width={40} 
                     height={40} 
-                    className="object-contain transition-transform duration-300 hover:scale-[1.1]" 
-                    style={{ width: 'auto', height: '40px' }}
+                    className="object-contain transition-transform duration-300 hover:scale-[1.1] rounded-full" 
                   />
                 </a>
                 <button
@@ -178,7 +176,7 @@ export default function Hero(props: any) {
                       onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 flex items-center justify-center rounded-full bg-primary px-3 py-4 text-xl font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
                     >
-                      Get Started Free
+                      Get a Free Consultation
                     </a>
                   </div>
                 </div>

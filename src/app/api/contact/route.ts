@@ -10,20 +10,20 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "nexiler.official@gmail.com", // Your Gmail address
+        user: "info@tornadoally.dev", // Your Gmail address
         pass: process.env.GMAIL_APP_PASSWORD, // Gmail App Password (not regular password)
       },
     });
 
-    // Email to company (info@nexiler.tech)
+    // Email to company (hello@tornadoallydev.com)
     const companyMailOptions = {
-      from: "no-reply@nexiler.tech",
-      to: "info@nexiler.tech",
+      from: "no-reply@tornadoally.dev",
+      to: "info@tornadoally.dev",
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <div style="max-width: 600px; margin: 0 auto; background-color: #1B1B1B; color: #ffffff; padding: 40px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <img src="https://www.nexiler.tech/nexiler.png" alt="Nexiler Logo" style="max-width: 200px; height: auto; margin: 0 auto;" />
+            <img src="https://www.tornadoallydev.com/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 200px; height: auto; margin: 0 auto; border-radius: 50%;" />
             <p style="color: #999999; font-size: 14px; margin-top: 10px;">New Contact Form Submission</p>
           </div>
           
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
           </div>
 
           <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-            <p style="color: #666666; font-size: 12px;">Sent from Nexiler.tech contact form</p>
+            <p style="color: #666666; font-size: 12px;">Sent from TornadoallyDev contact form</p>
           </div>
         </div>
       `,
@@ -46,14 +46,14 @@ export async function POST(request: NextRequest) {
 
     // Confirmation email to client
     const clientMailOptions = {
-      from: "no-reply@nexiler.tech",
+      from: "no-reply@tornadoally.dev",
       to: email,
-      subject: "Thank you for contacting Nexiler!",
+      subject: "Thank you for contacting TornadoallyDev!",
       html: `
         <div style="max-width: 600px; margin: 0 auto; background-color: #1B1B1B; color: #ffffff; padding: 40px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <img src="https://www.nexiler.tech/nexiler.png" alt="Nexiler Logo" style="max-width: 220px; height: auto; margin: 0 auto;" />
-            <p style="color: #999999; font-size: 16px; margin-top: 10px;">Intelligent Automation & Premium Web Development</p>
+            <img src="https://www.tornadoallydev.com/tornado-ally-dev.png" alt="TornadoallyDev Logo" style="max-width: 220px; height: auto; margin: 0 auto; border-radius: 50%;" />
+            <p style="color: #999999; font-size: 16px; margin-top: 10px;">Unity Development & Blender Art</p>
           </div>
           
           <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(168,85,247,0.2); margin: 20px 0;">
@@ -73,16 +73,16 @@ export async function POST(request: NextRequest) {
             <ul style="padding-left: 20px; color: #cccccc; line-height: 1.8; margin: 10px 0;">
               <li style="margin: 8px 0;">Detailed review of your business needs</li>
               <li style="margin: 8px 0;">A direct response from our project managers</li>
-              <li style="margin: 8px 0;">Scheduling a completely free consultation call</li>
-              <li style="margin: 8px 0;">Proposing an AI-driven, highly optimized solution</li>
+              <li style="margin: 8px 0;">Confirming scope, timeline, and preferred delivery format</li>
+              <li style="margin: 8px 0;">Replying with a practical next step or estimate</li>
             </ul>
           </div>
 
           <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
             <p style="color: #ffffff; font-size: 16px; margin-bottom: 5px;">Best regards,</p>
-            <p style="color: #a855f7; font-weight: bold; font-size: 18px; margin-top: 0;">The Nexiler Team</p>
-            <p style="color: #999999; font-size: 12px; margin-top: 15px;">info@nexiler.tech | +92 307 2853163</p>
-            <p style="color: #666666; font-size: 11px;">&copy; 2024 Nexiler. All rights reserved.</p>
+            <p style="color: #a855f7; font-weight: bold; font-size: 18px; margin-top: 0;">TornadoallyDev</p>
+            <p style="color: #999999; font-size: 12px; margin-top: 15px;">info@tornadoally.dev | +1 (123) 456-7890</p>
+            <p style="color: #666666; font-size: 11px;">&copy; 2026 TornadoallyDev. All rights reserved.</p>
           </div>
         </div>
       `,

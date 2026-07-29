@@ -25,7 +25,7 @@ export default function AboutUs() {
               <div className="mb-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-purple-400 animate-pulse shadow-[0_0_8px_rgba(168,85,247,0.8)]" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary">System Boot</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary">Engine Boot</span>
                 </div>
                 <span className="text-xs font-extrabold text-purple-400">92%</span>        
               </div>
@@ -36,10 +36,10 @@ export default function AboutUs() {
               </div>
 
               <p className="text-xs text-muted-foreground font-medium leading-relaxed">
-                Loading intelligent workflows and compiling next generation components...
+                Compiling shaders and baking global illumination...
               </p>
               <p className="text-xs text-white/80 font-semibold mt-3 animate-pulse">
-                Your digital ecosystem is almost ready.
+                Your virtual environment is almost ready.
               </p>
             </CardContent>
           </Card>
@@ -72,12 +72,12 @@ export default function AboutUs() {
           </h2>
           <div className="bg-card/60 backdrop-blur-sm rounded-[2rem] p-5 sm:p-6">
             <p className="font-mono">
-              In 2025, that vision became reality.<strong className="text-white">Muhammad Shaheer</strong>, <strong className="text-white">Muhammad Saim</strong>, and <strong className="text-white">Syed Muhammad Taha</strong> formed Team Nexiler. Now, instead of working alone, we work as one team with one goal: to grow your business and solve your problems.
+              TornadoallyDev is a solo studio built for focused delivery. The work centers on Unity development, Blender artistry, and practical production support for small teams or independent creators.
             </p>
           </div>
           <Button variant="link" className="px-0 pt-4 text-white text-base sm:text-lg tracking-tight font-semibold hover:text-white/80 transition-colors group">
-            <Link href="/about#linkedin-section" className="flex items-center">
-              Meet the team <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Link href="/about" className="flex items-center">
+              View our about page <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
         </motion.div>

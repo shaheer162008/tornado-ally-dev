@@ -3,50 +3,46 @@
 import { motion } from "framer-motion";
 import { Check, Star, Gem, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const pricingPlans = [
   {
-    name: "Starter",
-    description: "Perfect for personal projects and early-stage startups needing a solid foundation.",
-    price: "$999",
+    name: "Hourly",
+    description: "Best for scoped tasks, small updates, or ongoing support.",
+    price: "$30/hr",
     features: [
-      "Custom Website (up to 5 pages)",
-      "Basic SEO Setup",
-      "Mobile Responsive Design",
-      "1 Month Free Support",
-      "Contact Form Integration",
+      "Unity development",
+      "Blender art",
+      "C# programming",
+      "Shader development",
     ],
     popular: false,
     icon: <Zap className="w-5 h-5 text-foreground" />,
     buttonVariant: "secondary" as const,
   },
   {
-    name: "Professional",
-    description: "Ideal for growing businesses looking for advanced automation and strong presence.",
-    price: "$2,499",
+    name: "Task Based",
+    description: "Per-task pricing is available when that is a better fit for the project.",
+    price: "Negotiable",
     features: [
-      "Custom Website (up to 10 pages)",
-      "Advanced SEO Optimization",
-      "AI Chatbot Integration",
-      "Basic Automation Workflows",
-      "3 Months Free Support",
-      "Analytics Dashboard",
+      "Hard-surface modeling",
+      "Texturing in any style",
+      "Flexible scope",
+      "PayPal payment",
     ],
     popular: true,
     icon: <Star className="w-5 h-5 text-foreground fill-foreground" />,
     buttonVariant: "default" as const,
   },
   {
-    name: "Enterprise",
-    description: "Complete ecosystem with complex systems, full branding, and scalable AI solutions.",
-    price: "Custom",
+    name: "Full Time",
+    description: "Longer engagements for ongoing collaboration or independent production support.",
+    price: "Open",
     features: [
-      "Unlimited Web Pages & Web App",
-      "Full Brand Identity Creation",
-      "Complex AI Automations (Zapier/Make)",
-      "Dedicated Social Media Ads",
-      "Priority 24/7 Support",
-      "Custom CRM Development",
+      "Available full time",
+      "Open for work",
+      "Free consultation",
+      "Collaboration or independent work",
     ],
     popular: false,
     icon: <Gem className="w-5 h-5 text-foreground" />,
@@ -74,14 +70,14 @@ export default function Pricing() {
               >
                 <Gem className="w-4 h-4 text-foreground" />
                 <span className="text-xs font-semibold uppercase tracking-wider text-foreground font-sans">
-                  Pricing Plans
+                  Rates
                 </span>
               </motion.div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-4">
                 Transparent <span className="text-primary">Pricing</span>
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground/90 font-medium text-balance font-mono">
-                Choose the perfect plan tailored to accelerate your business growth. No hidden fees, just value.
+                Simple rates for studio work, with PayPal preferred for payment.
               </p>
             </div>
         </div>
@@ -137,16 +133,18 @@ export default function Pricing() {
               </ul>
 
               <div className="mt-auto pt-4">
-                <Button 
-                  variant={plan.buttonVariant} 
-                  className={`w-full py-6 rounded-full font-bold text-base transition-all duration-300 ${
-                    plan.popular
-                    ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-primary/25"
-                    : "bg-background hover:bg-white/5 border border-white/10 text-foreground"
-                  }`}
-                >
-                  Get Started With {plan.name}
-                </Button>
+                <Link href="/contact" className="w-full block">
+                  <Button 
+                    variant={plan.buttonVariant} 
+                    className={`w-full py-6 rounded-full font-bold text-base transition-all duration-300 ${
+                      plan.popular
+                      ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-primary/25"
+                      : "bg-background hover:bg-white/5 border border-white/10 text-foreground"
+                    }`}
+                  >
+                    Contact About {plan.name}
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           ))}

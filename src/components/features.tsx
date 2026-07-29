@@ -53,9 +53,9 @@ const FastDeliveryCard = () => (
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-[0_0_10px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300">
         <Zap className="h-6 w-6 text-primary" />
       </div>
-      <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Fast <span className="text-primary">Delivery</span></CardTitle>
+      <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Agile <span className="text-primary">Development</span></CardTitle>
       <CardDescription className="font-mono text-sm text-white/90">
-        Quick turnaround times without compromising quality. Get your projects delivered faster with our streamlined workflow.
+        Rapid prototyping and seamless iteration in Unity. We bring your mechanics to life faster without compromising code quality.
       </CardDescription>
     </CardHeader>
   </Card>
@@ -68,20 +68,20 @@ const SupportCard = () => (
       <div>
         <div className="flex items-start justify-between mb-4">
           <div>
-            <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">24/7 <span className="text-primary">Support</span></CardTitle>
-            <CardDescription className="font-mono text-sm text-white/90">Always Available</CardDescription>
+            <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Direct <span className="text-primary">Contact</span></CardTitle>
+            <CardDescription className="font-mono text-sm text-white/90">No Middlemen</CardDescription>
           </div>
           <Badge variant="outline" className="border-white/10 text-white font-sans whitespace-nowrap shrink-0">
-            Round the Clock
+            Dedicated
           </Badge>
         </div>
         <div>
-          <span className="text-5xl sm:text-6xl font-extrabold tracking-tighter text-primary">24/7</span>
+          <span className="text-5xl sm:text-6xl font-extrabold tracking-tighter text-primary">1 on 1</span>
         </div>
       </div>
       <div className="flex justify-between text-xs sm:text-sm font-mono font-medium text-white/90 mt-4">
-        <span>Customer Support</span>
-        <span>Quick Response</span>
+        <span>Direct Communication</span>
+        <span>Developer Access</span>
       </div>
     </CardContent>
   </Card>
@@ -95,10 +95,10 @@ const CustomSolutionsCard = () => (
         <Code2 className="h-6 w-6 text-primary" />
       </div>
       <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white mb-2">
-        Custom <span className="text-primary">Solutions</span>
+        Custom <span className="text-primary">Shaders & Scripts</span>
       </CardTitle>
       <CardDescription className="font-mono text-sm text-white/90">
-        Tailored solutions built around your specific business goals, not generic templates.
+        Tailored C# systems and optimized shaders built specifically for your game's unique requirements.
       </CardDescription>
     </CardContent>
   </Card>
@@ -115,7 +115,7 @@ const ROICard = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0 pointer-events-none" />
     <CardContent className="relative z-10 flex h-full items-center justify-center p-6">
-      <span className="text-7xl font-extrabold text-primary tracking-tighter">ROI</span>
+      <span className="text-7xl font-extrabold text-primary tracking-tighter">3D</span>
     </CardContent>
   </Card>
 );
@@ -128,9 +128,9 @@ const ModernTechCard = () => (
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-[0_0_10px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300">
           <Layers className="h-6 w-6 text-primary" />
         </div>
-        <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Modern <span className="text-primary">Tech Stack</span></CardTitle>
+        <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Industry <span className="text-primary">Standards</span></CardTitle>
         <CardDescription className="font-mono text-sm text-white/90">
-          Latest technologies and frameworks for optimal performance.
+          Expertise in Unity, Blender, and modern 3D asset pipelines.
         </CardDescription>
       </div>
     </CardContent>
@@ -144,9 +144,9 @@ const DedicatedManagerCard = () => (
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-[0_0_10px_rgba(168,85,247,0.2)] group-hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300">
         <Users className="h-6 w-6 text-primary" />
       </div>
-      <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Dedicated <span className="text-primary">Manager</span></CardTitle>
+      <CardTitle className="text-xl sm:text-2xl font-extrabold tracking-tighter text-white">Solo <span className="text-primary">Dedication</span></CardTitle>
       <CardDescription className="font-mono text-sm text-white/90">
-        Your personal project manager ensures seamless communication and on-time delivery.
+        You get my undivided attention and commitment to your project's success, functioning as an extension of your team.
       </CardDescription>
     </CardHeader>
   </Card>

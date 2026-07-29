@@ -5,8 +5,8 @@ import Footer from "@/components/footer";
 import { GridBackground } from "@/components/ui/grid-background";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Nexiler",
-  description: "Get in touch with Nexiler for web development, AI automation, and digital growth solutions.",
+  title: "Contact - TornadoallyDev",
+  description: "Get in touch with TornadoallyDev for Unity development, Blender art, C# programming, shaders, and texturing.",
 };
 
 export default function ContactPage() {
@@ -14,8 +14,8 @@ export default function ContactPage() {
     <main className="flex flex-col bg-background relative w-full overflow-x-hidden">
       <Hero 
         title={<>Get <span className="text-primary">in Touch</span></>}
-        description="Ready to transform your digital presence? Let's discuss how we can help your business grow."
-        announcementBanner={{ text: "Contact Us", linkText: "", linkHref: "#" }}
+        description="Get a free consultation or send a message to discuss a Unity or Blender project."
+        announcementBanner={{ text: "Get a Free Consultation", linkText: "", linkHref: "#" }}
       />
       <GridBackground>
         <Contact />

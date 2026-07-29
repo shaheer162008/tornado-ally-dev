@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, Mail, Phone, MapPin, Send, X, CheckCircle2 } from "lucide-react";
+import { MessageSquare, Mail, Phone, MapPin, Send, X, CheckCircle2, MessagesSquare } from "lucide-react";
 import { companyConfig } from "../../company.config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -76,10 +76,10 @@ export default function Contact() {
             </motion.div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-4">
-              Let's create your <span className="text-primary">success story.</span>
+              Let&apos;s build your <span className="text-primary">next project.</span>
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground/90 font-medium text-balance font-mono leading-relaxed">
-              Whether you have a question, a project idea, or just want to say hi, we're here to help you navigate the digital landscape.
+              Get a free consultation or send a message below. I&apos;m open to collaboration or independent work.
             </p>
           </div>
         </div>
@@ -98,11 +98,11 @@ export default function Contact() {
             <div className="space-y-6 w-full md:pr-8">
               <div className="flex items-center gap-4 p-4 sm:p-6 rounded-[2rem] bg-card/60 backdrop-blur-md border border-white/5 hover:border-white/10 transition-colors w-full">
                 <div className="flex items-center justify-center w-12 h-12 rounded-[2rem] bg-[#1B1B1B] border border-white/5 shrink-0">
-                  <Mail className="w-5 h-5 text-foreground" />
+                  <MessagesSquare className="w-5 h-5 text-foreground" />
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text-sm text-muted-foreground font-medium font-mono">Email Us</p>
-                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">{companyConfig.email}</p>
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Discord</p>
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">[DISCORD_USERNAME]</p>
                 </div>
               </div>
 
@@ -111,8 +111,8 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-foreground" />
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text-sm text-muted-foreground font-medium font-mono">Call Us</p>
-                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">{companyConfig.phone}</p>
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Rates</p>
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">$30/hr or per-task, negotiable</p>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-foreground" />
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text-sm text-muted-foreground font-medium font-mono">We're based in</p>
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Availability</p>
                   <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">{companyConfig.address}</p>
                 </div>          
               </div>
@@ -131,8 +131,38 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-foreground" />
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text-sm text-muted-foreground font-medium font-mono">Quick Response Time</p>
-                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">We’ll reply within 24 hours via email or phone.</p>
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Payment</p>
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">PayPal preferred</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 sm:p-6 rounded-[2rem] bg-card/60 backdrop-blur-md border border-white/5 hover:border-white/10 transition-colors w-full">
+                <div className="flex items-center justify-center w-12 h-12 rounded-[2rem] bg-[#1B1B1B] border border-white/5 shrink-0">
+                  <Phone className="w-5 h-5 text-foreground" />
+                </div>
+                <div className="overflow-hidden">
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Status</p>
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">Open for work</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 sm:p-6 rounded-[2rem] bg-card/60 backdrop-blur-md border border-white/5 hover:border-white/10 transition-colors w-full">
+                <div className="flex items-center justify-center w-12 h-12 rounded-[2rem] bg-[#1B1B1B] border border-white/5 shrink-0">
+                  <Mail className="w-5 h-5 text-foreground" />
+                </div>
+                <div className="overflow-hidden">
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Work Style</p>
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate">Open to collaboration or working independently</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 sm:p-6 rounded-[2rem] bg-card/60 backdrop-blur-md border border-white/5 hover:border-white/10 transition-colors w-full">
+                <div className="flex items-center justify-center w-12 h-12 rounded-[2rem] bg-[#1B1B1B] border border-white/5 shrink-0">
+                  <Mail className="w-5 h-5 text-foreground" />
+                </div>
+                <div className="overflow-hidden">
+                  <p className="text-sm text-muted-foreground font-medium font-mono">Free Consultation</p>
+                  <a href="/contact" className="text-sm sm:text-base lg:text-lg font-semibold text-foreground truncate underline underline-offset-4">Get a Free Consultation</a>
                 </div>
               </div>
 
@@ -191,15 +221,15 @@ export default function Contact() {
                   <ul className="space-y-3 text-muted-foreground font-mono text-sm">
                     <li className="flex items-start gap-3">
                       <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold shrink-0 mt-0.5">1</span>
-                      <span>We'll contact you within 24 hours to schedule a <strong className="text-white">free consultation</strong></span>
+                      <span>We&apos;ll contact you within 24 hours to schedule a <strong className="text-white">free consultation</strong></span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold shrink-0 mt-0.5">2</span>
-                      <span>We'll understand your needs and provide the <strong className="text-white">best solution</strong> for your business</span>
+                      <span>We&apos;ll understand your needs and provide the <strong className="text-white">best solution</strong> for your business</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold shrink-0 mt-0.5">3</span>
-                      <span>We'll deliver exactly what works best for <strong className="text-white">your goals</strong></span>
+                      <span>We&apos;ll deliver exactly what works best for <strong className="text-white">your goals</strong></span>
                     </li>
                   </ul>
                 </div>
@@ -235,7 +265,7 @@ export default function Contact() {
             <div className="flex-1 pr-6 pt-1">
               <h4 className="text-lg font-bold text-white mb-1.5">Message Sent!</h4>
               <p className="text-sm text-muted-foreground font-mono">
-                We've received your message and will contact you shortly.
+                We&apos;ve received your message and will contact you shortly.
               </p>
             </div>
             <button

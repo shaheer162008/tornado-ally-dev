@@ -7,10 +7,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#1B1B1B] font-sans z-10 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-black font-sans z-10 border-t border-white/5 overflow-hidden">
       
       {/* Subtle top glow matching Next.js dark themes */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 sm:gap-12 lg:gap-16">
@@ -25,16 +25,15 @@ export default function Footer() {
             >
               <Link href="/" className="inline-block group">
                 <Image 
-                  src="/nexiler-nav.png" 
-                  alt="Nexiler Logo" 
-                  width={180} 
-                  height={45} 
-                  className="object-contain transition-transform duration-300 hover:scale-[1.1]" 
-                  style={{ width: 'auto', height: '45px' }}
+                  src="/tornado-ally-dev.png" 
+                  alt="TornadoallyDev Logo" 
+                  width={40} 
+                  height={40} 
+                  className="object-contain transition-transform duration-300 hover:scale-[1.1] rounded-full" 
                 />
               </Link>
               <p className="mt-6 text-sm text-muted-foreground font-medium leading-relaxed max-w-sm">
-                Empowering businesses with intelligent automation, stunning websites, and relentless performance.
+                Unity development and Blender artistry for full-time project support, collaboration, and independent production.
               </p>
               
               <div className="mt-6 space-y-3">
@@ -51,16 +50,10 @@ export default function Footer() {
               <div className="mt-8">
                 <h4 className="text-base font-bold text-white mb-4 tracking-wide">Connect</h4>
                 <div className="flex items-center gap-3 flex-wrap">
-                  <a href={companyConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
-                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={18} height={18} className="opacity-80" />
+                  <a href="https://discord.com/users/tornadoallydev" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0" aria-label="Discord contact">
+                    <Image src="/icons/discord.svg" alt="Discord" width={18} height={18} className="opacity-80" />
                   </a>
-                  <a href={companyConfig.socials.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
-                    <Image src="/icons/github.svg" alt="GitHub" width={18} height={18} className="opacity-80" />
-                  </a>
-                  <a href={companyConfig.socials.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
-                    <Image src="/icons/facebook.svg" alt="Facebook" width={18} height={18} className="opacity-80" />
-                  </a>
-                  <a href={companyConfig.socials.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
+                  <a href="https://www.instagram.com/tornadoallydev/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
                     <Image src="/icons/instagram.svg" alt="Instagram" width={18} height={18} className="opacity-80" />
                   </a>
                   <a href={companyConfig.socials.email} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all hover:scale-110 shadow-sm shrink-0">
@@ -77,7 +70,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
@@ -97,15 +90,10 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-white tracking-wide">Our Services</h3>
             <ul className="space-y-4">
-              <li><Link href="/services/ai-automation" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">AI Automation</Link></li>
-              <li><Link href="/services/ai-chatbots" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">AI Chatbots</Link></li>
-              <li><Link href="/services/content-creation" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Content Creation</Link></li>
-              <li><Link href="/services/full-brand-creation" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Full Brand Creation</Link></li>
-              <li><Link href="/services/mobile-app-dev" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Mobile App Dev</Link></li>
-              <li><Link href="/services/motion-graphics" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Motion Graphics</Link></li>
-              <li><Link href="/services/seo-services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">SEO Services</Link></li>
-              <li><Link href="/services/social-media-management" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Social Media Management</Link></li>
-              <li><Link href="/services/website-development" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Website Development</Link></li>
+              <li><Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Unity Development</Link></li>
+              <li><Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Blender Art</Link></li>
+              <li><Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">C# Programming</Link></li>
+              <li><Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Shader Development</Link></li>
             </ul>
           </div>
 
@@ -123,13 +111,26 @@ export default function Footer() {
         </div>
 
         {/* Bottom Banner */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} {companyConfig.name}. All rights reserved.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Developed By Team <span className="text-white font-medium">{companyConfig.name}</span>
-          </p>
+        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col lg:flex-row justify-between items-center gap-6 relative z-10">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <p className="text-sm text-muted-foreground font-medium text-center sm:text-left">
+              &copy; {new Date().getFullYear()} {companyConfig.name}. All rights reserved.
+            </p>
+            <div className="h-4 w-px bg-white/20 hidden sm:block"></div>
+            <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
+              Terms of Service
+            </Link>
+          </div>
+          
+          <a href="https://www.nexiler.tech" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-sm text-muted-foreground font-medium bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full border border-white/10 hover:border-white/20 backdrop-blur-md transition-all">
+            <span>Developed by</span>
+            <span className="flex items-center gap-1.5 transition-all">
+              <span className="font-extrabold bg-gradient-to-r from-[#a855f7] to-indigo-400 bg-clip-text text-transparent tracking-wide group-hover:from-purple-400 group-hover:to-indigo-300 transition-colors">Team Nexiler</span>
+              <svg className="w-3.5 h-3.5 text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import Hero from '@/components/hero';
 import { GridBackground } from '@/components/ui/grid-background';
 import Footer from '@/components/footer';
 
-const categories = ['All', 'Website Development', 'AI Automation'];
+const categories = ['All', '[WILL BE FILLED BY YOU]'];
 
 export default function OurWorkPage() {
   const [active, setActive] = useState('All');
@@ -22,8 +22,8 @@ export default function OurWorkPage() {
   return (
     <div className="min-h-screen bg-background">
       <Hero 
-        title={<>Real Projects. Real Results. <span className="text-primary">No Fluff.</span></>} 
-        description="Browse our work across web design, automation, brand growth, and AI — every project built to deliver measurable outcomes."
+        title={<>Portfolio. <span className="text-primary">Placeholders Only.</span></>} 
+        description="Real portfolio content will be filled in by the client. Every visible project section is intentionally marked for later replacement."
         announcementBanner={{ text: "View featured case studies", linkText: "", linkHref: "#" }}
       />
       <GridBackground className="pb-0">
@@ -33,15 +33,13 @@ export default function OurWorkPage() {
             <div
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/30 border border-white/10 backdrop-blur-md text-xs font-medium tracking-widest text-white mb-6 uppercase"
             >
-              Our Portfolio
+              [WILL BE FILLED BY YOU]
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Projects We&apos;ve{' '}
-              <span className="text-primary">Delivered</span>
+              [WILL BE FILLED BY YOU]
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore the complete collection of work we&apos;ve done for clients
-              around the world.
+              [WILL BE FILLED BY YOU]
             </p>
           </div>
 
@@ -52,7 +50,7 @@ export default function OurWorkPage() {
                 className="flex items-center gap-2 px-6 py-2 rounded-full font-sans bg-secondary/30 border border-white/10 backdrop-blur-md"
               >
                 <FiStar size={16} className="text-white" />
-                <span className="text-white font-semibold text-sm tracking-wide uppercase">Featured Projects</span>
+                <span className="text-white font-semibold text-sm tracking-wide uppercase">[WILL BE FILLED BY YOU]</span>
               </div>
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg, #333, transparent)' }} />
             </div>
@@ -89,7 +87,7 @@ export default function OurWorkPage() {
                       <span
                         className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-secondary/30 text-white border border-white/10 backdrop-blur-md"
                       >
-                        {project.category}
+                        [WILL BE FILLED BY YOU]
                       </span>
                       <span
                         className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-primary/10 text-white border border-white/5 backdrop-blur-md flex items-center gap-1"
@@ -101,7 +99,7 @@ export default function OurWorkPage() {
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      {project.description}
+                      [WILL BE FILLED BY YOU]
                     </p>
                     {project.link && (
                       <a
@@ -126,7 +124,7 @@ export default function OurWorkPage() {
               <div
                 className="flex items-center gap-2 px-6 py-2 rounded-full font-sans bg-secondary/30 border border-white/10 backdrop-blur-md"
               >
-                <span className="text-white font-semibold text-sm tracking-wide uppercase">All Projects</span>
+                <span className="text-white font-semibold text-sm tracking-wide uppercase">[WILL BE FILLED BY YOU]</span>
                 <span
                   className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#1B1B1B]/40 border border-white/5 text-white/80"
                 >
@@ -150,7 +148,7 @@ export default function OurWorkPage() {
                 >
                   {cat}
                   <span className="ml-1.5 opacity-60">
-                    ({cat === 'All' ? projects.length : projects.filter((p) => p.category === cat).length})
+                    ([WILL BE FILLED BY YOU])
                   </span>
                 </button>
               ))}
@@ -197,7 +195,7 @@ export default function OurWorkPage() {
                       <span
                         className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-secondary/30 text-white border border-white/10 backdrop-blur-md"
                       >
-                        {project.category}
+                        [WILL BE FILLED BY YOU]
                       </span>
                       {project.featured && (
                         <span
@@ -211,7 +209,7 @@ export default function OurWorkPage() {
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
-                      {project.description}
+                      [WILL BE FILLED BY YOU]
                     </p>
                   </div>
                 </div>

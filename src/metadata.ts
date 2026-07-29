@@ -1,44 +1,31 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Nexiler",
+  name: "TornadoallyDev",
   description:
-    "Empowering businesses with intelligent automation, stunning websites, and relentless performance. We build premium web applications, automate workflows with AI, and scale your digital presence.",
-  url: "https://nexiler.tech",
-  ogImage: "https://nexiler.tech/og-image.jpg",
+    "Unity Developer and Blender Artist with 5 years of experience, available full time for collaboration or independent production.",
+  url: "https://tornadoallydev.com",
+  ogImage: "https://tornadoallydev.com/og-image.jpg",
   links: {
     github: "#",
     linkedin: "#",
     facebook: "#",
     instagram: "#",
-    email: "mailto:hello@nexiler.tech",
+    email: "mailto:hello@tornadoallydev.com",
   },
 };
 
 export const keywords = [
-  "web development",
-  "Next.js development",
-  "React development",
-  "AI automation",
-  "workflow automation",
-  "mobile app development",
-  "iOS app development",
-  "Android app development",
-  "SEO services",
-  "digital marketing",
-  "social media management",
-  "content creation",
-  "UI/UX design",
-  "custom software development",
-  "business automation",
-  "AI integration",
-  "chatbot development",
-  "performance marketing",
-  "brand identity",
-  "Nexiler",
-  "software development company",
-  "tech solutions",
-  "digital transformation",
+  "Unity development",
+  "Blender art",
+  "C# programming",
+  "shader development",
+  "hard-surface modeling",
+  "texturing",
+  "TornadoallyDev",
+  "game development",
+  "3D art",
+  "studio services",
 ];
 
 export const baseMetadata: Metadata = {
@@ -79,7 +66,7 @@ export const baseMetadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@nexiler",
+    creator: "@tornadoallydev",
   },
   robots: {
     index: true,
@@ -97,45 +84,45 @@ export const baseMetadata: Metadata = {
 export const homeMetadata: Metadata = {
   ...baseMetadata,
   title: {
-    default: `${siteConfig.name} - Intelligent Automation & Web Development`,
+    default: `${siteConfig.name} - Unity Developer & Blender Artist`,
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Nexiler empowers businesses with intelligent automation, stunning websites, and relentless performance. Expert Next.js development, AI automation, SEO, and digital solutions.",
+    "TornadoallyDev creates Unity and Blender-focused work for games, assets, and interactive experiences.",
 };
 
 export const servicesMetadata: Metadata = {
   ...baseMetadata,
-  title: "Services | Nexiler",
+  title: "Services | TornadoallyDev",
   description:
-    "Smart services that move your business forward. Web design, workflow automation, organic growth, and AI systems built around your goals. Next.js, React, AI/ML, SEO.",
+    "Unity development, Blender art, C# programming, shader development, hard-surface modeling, and texturing.",
 };
 
 export const aboutMetadata: Metadata = {
   ...baseMetadata,
-  title: "About Us | Nexiler",
+  title: "About | TornadoallyDev",
   description:
-    "Meet the team behind Nexiler. We're passionate about building honest partnerships that drive real results through advanced technology and intelligent automation.",
+    "Meet TornadoallyDev: a Unity Developer and Blender Artist with 5 years of experience.",
 };
 
 export const ourWorkMetadata: Metadata = {
   ...baseMetadata,
-  title: "Our Work | Nexiler",
+  title: "Our Work | TornadoallyDev",
   description:
-    "Explore our portfolio of successful projects. See how we've helped businesses transform with custom web applications, AI automation, and digital strategies.",
+    "Portfolio sections are reserved for client-provided work and will be filled in later.",
 };
 
 export const termsOfServiceMetadata: Metadata = {
   ...baseMetadata,
-  title: "Terms of Service | Nexiler",
+  title: "Terms of Service | TornadoallyDev",
   description:
-    "Legal agreement and terms of service for Nexiler. Learn about our service scope, payment terms, intellectual property rights, and client responsibilities.",
+    "Legal agreement and terms of service for TornadoallyDev.",
   keywords: [
     ...keywords,
     "terms of service",
     "legal agreement",
     "service terms",
-    "Nexiler terms",
+    "TornadoallyDev terms",
     "service contract",
   ],
 };
