@@ -24,3 +24,4 @@
 - **Primary Font:** Geist Sans (system-ui, sans-serif)
 - **Code & Tech Specs:** Geist Mono (ui-monospace)
 - **Logo Font Mapping:** The logo strictly uses `.font-negan` mapped in CSS.
+# tornado-ally-dev
